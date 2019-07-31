@@ -1,5 +1,8 @@
+#1 /usr/bin/python
+import cgi,cgitb
+cgitb.enable()
 import webbrowser
-new = 1
+new = 2
 
 original="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 scrambled="RWgUIa5v2TxsZj7otp3FqKrNEDzhL6B0O4QXHeicMYf1kSdGPubAVC8lnwy9mJ"
@@ -51,7 +54,8 @@ def main():
     user = form.getValue("username",'')
     pass1 = form.getValue("password1",'')
     pass2 = form.getValue("password2",'')
-    if pass1 == pass2:
-        webbrowser.open("https://KimFamily.github.io/signup.html")
+    # if pass1 == pass2:
+    #     webbrowser.open("https://KimFamily.github.io/signup.html")
+    webbrowser.open("https://KimFamily.github.io/signup.html")
 
 main()
